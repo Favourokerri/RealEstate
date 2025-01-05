@@ -1,0 +1,50 @@
+{% extends "./main.html" %}
+{% load static %}
+
+
+{% block stylelinks %}
+                
+    <link rel="stylesheet" href="{% static 'css/homePage.css' %}">
+{% endblock stylelinks %}
+
+{% block title %} home {% endblock title %}
+
+<!---==========================hero section ===========================-->
+{% block content %}
+    <div class="hero">
+        <div class="content">
+            <h1>The go-to site trusted by real estate professionals.</h1>
+
+            <div class="hero-nav">
+                <ul>
+                    <li class="active"><a class="active" href="#">Home</a></li>
+                    <li><a href="{% url 'buy' %}">Buy</a></li>
+                     <li><a href="#">sell</a></li>
+                     <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+            <form action="#">
+                <div class="search-container">
+                    <input type="text" placeholder="Search... location, state, city" class="search-input">
+                    <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="suggestions">
+                    <ul>
+                        <li><a href="#"> something</a></li>
+                        <li><a href="#"> something</a></li>
+                        <li><a href="#"> something</a></li>
+                        <li><a href="#"> something</a></li>
+                        <li><a href="#"> something</a></li>
+                        <li><a href="#"> something</a></li>
+                        <li><a href="#"> something</a></li>
+                        <li><a href="#"> something</a></li>
+                    </ul>
+                </div>
+            </form>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

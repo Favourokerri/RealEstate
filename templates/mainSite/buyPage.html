@@ -1,0 +1,287 @@
+{% extends "./main.html" %}
+{% load static %}
+
+
+{% block stylelinks %}
+    <link rel="stylesheet" href="{% static 'css/homePage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/buyPage.css' %}">
+{% endblock stylelinks %}
+
+{% block title %} buy property {% endblock title %}
+
+<!---==========================hero section ===========================-->
+{% block content %}
+    <div class="hero">
+        <div class="content">
+            <h1>The go-to site trusted by real estate professionals.</h1>
+
+            <div class="hero-nav">
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a class="active" href="{% url 'buy' %}">Buy</a></li>
+                     <li><a href="#">sell</a></li>
+                     <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+            <form action="#">
+                <div class="search-container">
+                    <input type="text" placeholder="Search... location, state, city" class="search-input">
+                    <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="suggestions">
+                    <ul>
+                        <li><a href="#"> something</a></li>
+                        <li><a href="#"> something</a></li>
+                        <li><a href="#"> something</a></li>
+                        <li><a href="#"> something</a></li>
+                        <li><a href="#"> something</a></li>
+                        <li><a href="#"> something</a></li>
+                        <li><a href="#"> something</a></li>
+                        <li><a href="#"> something</a></li>
+                    </ul>
+                </div>
+            </form>
+            </div>
+
+        </div>
+    </div>
+
+<!---==========================listng section ===========================-->
+<div class="container listings">
+    <div class="listing-header">
+        <h1> 3 bedroom flats</h1>
+        <a href="#">view all 3 bedroom flats</a>
+    </div>
+
+   <div class="listing-cards">
+     <div class="listing-card">
+        <div class="listing-image">
+            <img src="{% static 'images/house.webp' %}" alt="" srcset="">
+            <div class="wish">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="listing-details">
+            <li class="title"><i class="dot"></i>single family home</li>
+            <h2 class="price">N 3000</h1>
+            <div class="innerdetails">
+                <p><span>3</span> bedroom,</p>
+                <p><span>2</span> bedroom,</p>
+                <p><span>3,087</span> sqft</p>
+            </div>
+            <p> Delta state</p>
+            <p> no 5, old american road oleh</p>
+        </div>
+    </div>
+
+     <div class="listing-card">
+        <div class="listing-image">
+            <img src="{% static 'images/house.webp' %}" alt="" srcset="">
+            <div class="wish">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="listing-details">
+            <li class="title"><i class="dot"></i>single family home</li>
+            <h2 class="price">N 3000</h1>
+            <div class="innerdetails">
+                <p><span>3</span> bedroom,</p>
+                <p><span>2</span> bedroom,</p>
+                <p><span>3,087</span> sqft</p>
+            </div>
+            <p> Delta state</p>
+            <p> no 5, old american road oleh</p>
+        </div>
+    </div>
+
+     <div class="listing-card">
+        <div class="listing-image">
+            <img src="{% static 'images/house.webp' %}" alt="" srcset="">
+            <div class="wish">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="listing-details">
+            <li class="title"><i class="dot"></i>single family home</li>
+            <h2 class="price">N 3000</h1>
+            <div class="innerdetails">
+                <p><span>3</span> bedroom,</p>
+                <p><span>2</span> bedroom,</p>
+                <p><span>3,087</span> sqft</p>
+            </div>
+            <p> Delta state</p>
+            <p> no 5, old american road oleh</p>
+        </div>
+    </div>
+
+     <div class="listing-card">
+        <div class="listing-image">
+            <img src="{% static 'images/house.webp' %}" alt="" srcset="">
+            <div class="wish">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="listing-details">
+            <li class="title"><i class="dot"></i>single family home</li>
+            <h2 class="price">N 3000</h1>
+            <div class="innerdetails">
+                <p><span>3</span> bedroom,</p>
+                <p><span>2</span> bedroom,</p>
+                <p><span>3,087</span> sqft</p>
+            </div>
+            <p> Delta state</p>
+            <p> no 5, old american road oleh</p>
+        </div>
+
+        
+    </div>
+
+     <div class="listing-card">
+        <div class="listing-image">
+            <img src="{% static 'images/house.webp' %}" alt="" srcset="">
+            <div class="wish">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="listing-details">
+            <li class="title"><i class="dot"></i>single family home</li>
+            <h2 class="price">N 3000</h1>
+            <div class="innerdetails">
+                <p><span>3</span> bedroom,</p>
+                <p><span>2</span> bedroom,</p>
+                <p><span>3,087</span> sqft</p>
+            </div>
+            <p> Delta state</p>
+            <p> no 5, old american road oleh</p>
+        </div>
+
+        
+    </div>
+   </div>
+</div>
+
+<div class="container listings">
+    <div class="listing-header">
+        <h1> 4 bedroom flats</h1>
+        <a href="#">view all 4 bedroom flats</a>
+    </div>
+
+   <div class="listing-cards">
+     <div class="listing-card">
+        <div class="listing-image">
+            <img src="{% static 'images/house.webp' %}" alt="" srcset="">
+            <div class="wish">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="listing-details">
+            <li class="title"><i class="dot"></i>single family home</li>
+            <h2 class="price">N 3000</h1>
+            <div class="innerdetails">
+                <p><span>3</span> bedroom,</p>
+                <p><span>2</span> bedroom,</p>
+                <p><span>3,087</span> sqft</p>
+            </div>
+            <p> Delta state</p>
+            <p> no 5, old american road oleh</p>
+        </div>
+    </div>
+
+     <div class="listing-card">
+        <div class="listing-image">
+            <img src="{% static 'images/house.webp' %}" alt="" srcset="">
+            <div class="wish">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="listing-details">
+            <li class="title"><i class="dot"></i>single family home</li>
+            <h2 class="price">N 3000</h1>
+            <div class="innerdetails">
+                <p><span>3</span> bedroom,</p>
+                <p><span>2</span> bedroom,</p>
+                <p><span>3,087</span> sqft</p>
+            </div>
+            <p> Delta state</p>
+            <p> no 5, old american road oleh</p>
+        </div>
+    </div>
+
+     <div class="listing-card">
+        <div class="listing-image">
+            <img src="{% static 'images/house.webp' %}" alt="" srcset="">
+            <div class="wish">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="listing-details">
+            <li class="title"><i class="dot"></i>single family home</li>
+            <h2 class="price">N 3000</h1>
+            <div class="innerdetails">
+                <p><span>3</span> bedroom,</p>
+                <p><span>2</span> bedroom,</p>
+                <p><span>3,087</span> sqft</p>
+            </div>
+            <p> Delta state</p>
+            <p> no 5, old american road oleh</p>
+        </div>
+    </div>
+
+     <div class="listing-card">
+        <div class="listing-image">
+            <img src="{% static 'images/house.webp' %}" alt="" srcset="">
+            <div class="wish">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="listing-details">
+            <li class="title"><i class="dot"></i>single family home</li>
+            <h2 class="price">N 3000</h1>
+            <div class="innerdetails">
+                <p><span>3</span> bedroom,</p>
+                <p><span>2</span> bedroom,</p>
+                <p><span>3,087</span> sqft</p>
+            </div>
+            <p> Delta state</p>
+            <p> no 5, old american road oleh</p>
+        </div>
+
+        
+    </div>
+
+     <div class="listing-card">
+        <div class="listing-image">
+            <img src="{% static 'images/house.webp' %}" alt="" srcset="">
+            <div class="wish">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="listing-details">
+            <li class="title"><i class="dot"></i>single family home</li>
+            <h2 class="price">N 3000</h1>
+            <div class="innerdetails">
+                <p><span>3</span> bedroom,</p>
+                <p><span>2</span> bedroom,</p>
+                <p><span>3,087</span> sqft</p>
+            </div>
+            <p> Delta state</p>
+            <p> no 5, old american road oleh</p>
+        </div>
+
+        
+    </div>
+   </div>
+</div>
+{% endblock %}

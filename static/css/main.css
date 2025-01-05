@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 980;
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+header .logo h2 span {
+    color: red;
+}
+
+.sidenav-logo-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     border-bottom: 1px solid gray;
+     display: none;
+}
+
+.nav-links .side-nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 20px;
+    margin-left: 0;
+}
+
+.nav-links .side-nav-logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-links .side-nav-logo h3 span {
+    color: red;
+}
+
+.sidenav-logo-main .close i {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: "";
+    border: 0px solid black;
+    width: 0%;
+    display: block
+}
+
+.nav-links ul li:hover::after {
+    border: 1px solid black;
+    width: 100%;
+}
+
+header .handbugger {
+    margin-right: 20px;
+    font-size: 25px;
+    display: none;
+}
+
+header .account {
+    margin-right: 20px;
+}
+
+header .account a {
+    margin-left: 20px;
+    padding: 8px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+header .account .login {
+    color: black;
+    border: 1px solid gray;
+}
+
+.profile a {
+    padding: 8px;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+   color: white;
+   border: 1px solid gray;
+   background-color: black;
+   display: none; 
+}
+
+header .account .signUp {
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+}
+
+
+@media (max-width:840px) {
+    .nav-links {
+        top: 0px;
+        position: absolute;
+        height: 100vh;
+        width: 300px;
+        z-index: 1000;
+        background-color: white;
+        left: -300px;
+        transition: 0.5s ease;
+    }
+
+    .sidenav-logo-main {
+        display: flex;
+    }
+
+
+    .nav-links ul li {
+        display: block;
+        border-bottom: 1px solid rgb(188, 181, 181);
+        padding: 20px;
+        margin-left: 10px;
+    }
+
+    header .account {
+        display: none;
+    }
+
+    header .handbugger {
+        display: block;
+    }
+
+    .profile a{
+        display: block;
+    }
+
+} 

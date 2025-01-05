@@ -1,0 +1,165 @@
+.hero {
+     background-image: linear-gradient(to bottom, rgba(9, 8, 8, 0.5), rgba(7, 7, 7, 0.5)), url("./hero2.jpeg");
+     height: 80vh;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+
+.hero .content {
+    width: 60%;
+}
+
+.hero .content h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.hero-nav ul {
+    list-style: none;
+}
+
+.hero-nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.hero-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.hero-nav ul li .active::after {
+    content: "";
+    border: 2px solid white;
+    width: 100%;
+    display: block;
+}
+
+.hero-nav ul li:hover::after {
+    content: "";
+    border: 2px solid white;
+    width: 100%;
+    display: block;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+.search-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    padding-left: 20px;
+    padding-right: 40px; /* space for the button */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+
+
+.search-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: black;
+}
+
+.search-button:focus {
+    outline: none;
+}
+
+.suggestions {
+    background-color: white;
+    height: 190px;
+    border-radius: 25px;
+    text-align: left;
+    overflow: scroll;
+    scrollbar-width: none; /* Hides the scrollbar in Firefox */
+    -ms-overflow-style: none;
+    display: none;
+}
+
+.suggestions::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar in WebKit-based browsers (Chrome, Safari) */
+}
+
+.suggestions ul {
+    list-style: none;
+}
+
+.suggestions ul li {
+    padding: 10px;
+    border-bottom: 1px solid rgb(188, 181, 181);
+}
+
+.suggestions ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+
+@media (max-width:760px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero .content {
+        width: 95%;
+    }
+
+   .hero .content h1 {
+        font-size: 30px;
+    }
+
+    .hero-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.search {
+    margin-top: 25px;
+}
+
+
+} 
